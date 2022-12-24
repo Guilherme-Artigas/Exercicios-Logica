@@ -18,12 +18,12 @@ const shortCut1 = (string) => {
   return novaFrase3;
 };
 
-// 2º versão/solução
 shortCut1('hello');
 shortCut1('codewars');
 shortCut1('goodbye');
 shortCut1('HELLO');
 
+// 2º versão/solução
 const shortCut2 = (string) => {
   let newWord = '';
   for (let index of string) {
