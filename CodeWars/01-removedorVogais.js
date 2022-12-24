@@ -31,7 +31,7 @@ const shortCut2 = (string) => {
       newWord += index;
     };
   };
-  return console.log(newWord);
+  return newWord;
 };
 
 shortCut2('hello');
