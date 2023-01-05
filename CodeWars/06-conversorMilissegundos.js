@@ -13,14 +13,17 @@
 
 // 1º versão/solução
 const past = (h, m, s) => {
-  if (h !== 0 && h !== undefined) return h*60;
-  if (m !== 0 && m !== undefined) return m;
-  if (s !== 0 && s !== undefined) return s;
+  if (typeof h !== 'number' || typeof m !== 'number' || typeof s !== 'number') {
+    return console.log('Erro, a função espera receber somente números!');
+  };
+  const HORAS_EM_MILISSEGUNDOS = (h * 60) * 60 * 1000;
+  const MINUTOS_EM_MILISSEGUNDOS = (m * 60) * 1000;
+  const SEGUNDOS_EM_MILISSEGUNDOS = s * 1000;
+  return HORAS_EM_MILISSEGUNDOS + MINUTOS_EM_MILISSEGUNDOS + SEGUNDOS_EM_MILISSEGUNDOS;
 };
-// 1 hora é igual a 60 minutos.
-// 1 minuto é igual a 60 segundos.
-// 1 segundo é igual a 1000 milissegundos.
 
-
-
-console.log(past(1, 1, 1));
+console.log(past(0,1,1)); // 61000
+console.log(past(1,1,1)); // 3661000
+console.log(past(0,0,0)); // 0
+console.log(past(1,0,1)); // 3601000
+console.log(past(1,0,0)); // 3600000
