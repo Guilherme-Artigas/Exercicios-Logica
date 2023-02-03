@@ -18,7 +18,6 @@
   },
   "homepage": "https://github.com/Guilherme-Artigas/Exercicios-Logica#readme",
   "dependencies": {
-    "readline-sync": "^1.4.10",
     "ts-node": "^10.9.1"
   }
 }
