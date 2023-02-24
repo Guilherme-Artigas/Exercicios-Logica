@@ -1,1 +1,6 @@
+# Diretório de dependências
 node_modules
+
+# Diretórios de editores de código/IDE's
+.vscode
+.idea
