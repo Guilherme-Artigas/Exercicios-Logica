@@ -2,10 +2,10 @@
   "name": "exercicios-logica",
   "version": "1.0.0",
   "description": "Repositório criado com a intenção de manter exercícios de logica.",
-  "main": "index.js",
+  "main": "index.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "npx ts-node CodeWars/8-Kyu/18-shapeCube.ts"
+    "start": "npx ts-node ."
   },
   "repository": {
     "type": "git",
